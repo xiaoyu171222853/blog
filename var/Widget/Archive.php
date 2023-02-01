@@ -1032,8 +1032,7 @@ class Archive extends Contents
      */
     public function related(int $limit = 5, ?string $type = null): Contents
     {
-        $type = strtolower($type);
-
+        
         switch ($type) {
             case 'author':
                 /** 如果访问权限被设置为禁止,则tag会被置为空 */
