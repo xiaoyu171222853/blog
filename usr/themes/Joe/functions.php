@@ -237,7 +237,7 @@ function themeConfig($form)
     'JDocumentTitle',
     NULL,
     NULL,
-    '',
+    '切换时显示标题',
     '介绍：在PC端切换网页标签时，网站标题显示的内容。如果不填写，则默认不开启 <br />
          注意：严禁加单引号或双引号！！！否则会导致网站出错！！'
   );
@@ -314,7 +314,7 @@ function themeConfig($form)
   $JBirthDay = new Typecho_Widget_Helper_Form_Element_Text(
     'JBirthDay',
     NULL,
-    '2022/05/09 13:00:00 <br>',
+    2022/05/09 13:00:00 <br>,
     '运行时间',
     '介绍：用于显示当前站点已经运行了多少时间。<br>
          注意：填写时务必保证填写正确！例如：2021/1/1 00:00:00 <br>
@@ -351,7 +351,7 @@ function themeConfig($form)
   $JAside_Author_Nick = new Typecho_Widget_Helper_Form_Element_Text(
     'JAside_Author_Nick',
     NULL,
-    '小宇',
+    小宇,
     ' 昵称- PC/WAP',
     '介绍：用于修改博主栏的博主昵称 <br />
          注意：如果不填写时则显示 *个人设置* 里的昵称'
@@ -395,7 +395,7 @@ function themeConfig($form)
   $JAside_Author_Link = new Typecho_Widget_Helper_Form_Element_Text(
     'JAside_Author_Link',
     NULL,
-    'https://qm.qq.com/cgi-bin/qm/qr?k=Gj_1WVr7pHxcQ1OBY-1pBRvyqR1EukC2&noverify=0&personal_qrcode_source=3',
+    "https://qm.qq.com/cgi-bin/qm/qr?k=Gj_1WVr7pHxcQ1OBY-1pBRvyqR1EukC2&noverify=0&personal_qrcode_source=3",
     '博主栏昵称跳转地址 - PC/WAP',
     '介绍：用于修改博主栏点击博主昵称后的跳转地址'
   );
@@ -720,7 +720,7 @@ function themeConfig($form)
   $JFriends = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JFriends',
     NULL,
-    '沸腾笔记 || https://boiling.top || https://q2.qlogo.cn/g?b=qq&nk=2310452245&s=100 ||沸腾啥也知道',
+    沸腾笔记 || https://boiling.top || https://q2.qlogo.cn/g?b=qq&nk=2310452245&s=100 ||沸腾啥也知道 <br />,
     '友情链接（非必填）',
     '介绍：用于填写友情链接 <br />
          注意：您需要先增加友链链接页面（新增独立页面-右侧模板选择友链），该项才会生效 <br />
@@ -857,7 +857,7 @@ function themeConfig($form)
   $JCommentMailHost = new Typecho_Widget_Helper_Form_Element_Text(
     'JCommentMailHost',
     NULL,
-    'smtp.qq.com',
+    smtp.qq.com,
     '邮箱服务器地址',
     '例如：smtp.qq.com'
   );
@@ -877,7 +877,7 @@ function themeConfig($form)
   $JCommentMailPort = new Typecho_Widget_Helper_Form_Element_Text(
     'JCommentMailPort',
     NULL,
-    '465',
+    465,
     '邮箱服务器端口号',
     '例如：465'
   );
@@ -887,7 +887,7 @@ function themeConfig($form)
   $JCommentMailFromName = new Typecho_Widget_Helper_Form_Element_Text(
     'JCommentMailFromName',
     NULL,
-    '小宇',
+    NULL,
     '发件人昵称',
     '例如：帅气的象拔蚌'
   );
@@ -897,7 +897,7 @@ function themeConfig($form)
   $JCommentMailAccount = new Typecho_Widget_Helper_Form_Element_Text(
     'JCommentMailAccount',
     NULL,
-    '2689856812@qq.com',
+    "2689856812@qq.com",
     '发件人邮箱',
     '例如：2323333339@qq.com'
   );
@@ -907,8 +907,8 @@ function themeConfig($form)
   $JCommentMailPassword = new Typecho_Widget_Helper_Form_Element_Text(
     'JCommentMailPassword',
     NULL,
-    NULL,
-    'warvuvzyceowdgch',
+    warvuvzyceowdgch,
+    '邮箱授权码',
     '介绍：这里填写的是邮箱生成的授权码 <br>
          获取方式（以QQ邮箱为例）：<br>
          QQ邮箱 > 设置 > 账户 > IMAP/SMTP服务 > 开启 <br>
@@ -921,8 +921,8 @@ function themeConfig($form)
   $JBaiduToken = new Typecho_Widget_Helper_Form_Element_Text(
     'JBaiduToken',
     NULL,
-    NULL,
-    'DzPon6tCZQbldZLu',
+    DzPon6tCZQbldZLu,
+    '收录',
     '介绍：填写此处，前台文章页如果未收录，则会自动将当前链接推送给百度加快收录 <br />
          其他：Token在百度收录平台注册账号获取'
   );
