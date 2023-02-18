@@ -38,7 +38,7 @@
     <section class="joe_aside__item"><?php $this->options->JCustomAside() ?></section>
   <?php endif; ?>
 
-  <?php if ($this->options->JAside_History_Today === 'on') : ?>
+  <?php if ($this->options->JAside_History_Today === 'off') : ?>
     <?php
     $time = time();
     $todayDate = date('m/d', $time);
