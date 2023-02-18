@@ -767,7 +767,7 @@ function themeConfig($form)
   $JLimitOneChinese = new Typecho_Widget_Helper_Form_Element_Select(
     'JLimitOneChinese',
     array('off' => '关闭（默认）', 'on' => '开启'),
-    'off',
+    'on',
     '是否开启评论至少包含一个中文',
     '介绍：开启后如果评论内容未包含一个中文，则将会把评论置为审核状态 <br />
          其他：用于屏蔽国外机器人刷的全英文垃圾广告信息'
