@@ -82,7 +82,7 @@ function themeConfig($form)
       'on' => '开启（默认）',
       'off' => '关闭'
     ),
-    '3',
+    'on',
     '开启或关闭全站评论',
     '介绍：用于一键开启关闭所有页面的评论 <br>
          注意：此处的权重优先级最高 <br>
@@ -109,7 +109,7 @@ function themeConfig($form)
 
   $JCustomNavs = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JCustomNavs',
-    '沸腾笔记 || https://boiling.top',
+    NULL,
     NULL,
     '导航栏自定义链接（非必填）',
     '介绍：用于自定义导航栏链接 <br />
@@ -213,7 +213,7 @@ function themeConfig($form)
   $JFooter_Left = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JFooter_Left',
     NULL,
-    '2022 - 2023 © Reach - <a href="https://www.xiaoyudi.xyz" target="_blank" rel="noopener noreferrer">Joe</a>',
+    '2022 - 2023 © Reach - <a href="https://www.xiaoyudi.xyz" target="_blank" rel="noopener noreferrer">小宇</a>',
     '自定义底部栏左侧内容（非必填）',
     '介绍：用于修改全站底部左侧内容（wap端上方） <br>
          例如：2019 - 2020 © Reach - Joe             '
@@ -235,9 +235,9 @@ function themeConfig($form)
 
   $JDocumentTitle = new Typecho_Widget_Helper_Form_Element_Text(
     'JDocumentTitle',
-    快回来啊~,
     NULL,
-    '网页被隐藏时显示的标题',
+    NULL,
+    '',
     '介绍：在PC端切换网页标签时，网站标题显示的内容。如果不填写，则默认不开启 <br />
          注意：严禁加单引号或双引号！！！否则会导致网站出错！！'
   );
@@ -313,9 +313,9 @@ function themeConfig($form)
 
   $JBirthDay = new Typecho_Widget_Helper_Form_Element_Text(
     'JBirthDay',
-    2022/05/09 13:00:00 <br>,
     NULL,
-    '网站成立日期（非必填）',
+    '2022/05/09 13:00:00 <br>',
+    '运行时间',
     '介绍：用于显示当前站点已经运行了多少时间。<br>
          注意：填写时务必保证填写正确！例如：2021/1/1 00:00:00 <br>
          其他：不填写则不显示，若填写错误，则不会显示计时'
@@ -351,8 +351,8 @@ function themeConfig($form)
   $JAside_Author_Nick = new Typecho_Widget_Helper_Form_Element_Text(
     'JAside_Author_Nick',
     NULL,
-    "小宇",
-    '博主栏博主昵称 - PC/WAP',
+    '小宇',
+    ' 昵称- PC/WAP',
     '介绍：用于修改博主栏的博主昵称 <br />
          注意：如果不填写时则显示 *个人设置* 里的昵称'
   );
@@ -395,7 +395,7 @@ function themeConfig($form)
   $JAside_Author_Link = new Typecho_Widget_Helper_Form_Element_Text(
     'JAside_Author_Link',
     NULL,
-    "https://qm.qq.com/cgi-bin/qm/qr?k=Gj_1WVr7pHxcQ1OBY-1pBRvyqR1EukC2&noverify=0&personal_qrcode_source=3",
+    'https://qm.qq.com/cgi-bin/qm/qr?k=Gj_1WVr7pHxcQ1OBY-1pBRvyqR1EukC2&noverify=0&personal_qrcode_source=3',
     '博主栏昵称跳转地址 - PC/WAP',
     '介绍：用于修改博主栏点击博主昵称后的跳转地址'
   );
