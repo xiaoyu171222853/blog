@@ -100,7 +100,7 @@ function themeConfig($form)
       '6' => '6个',
       '7' => '7个',
     ),
-    '6',
+    '3',
     '选择导航栏最大显示的个数',
     '介绍：用于设置最大多少个后，以更多下拉框显示'
   );
@@ -203,7 +203,7 @@ function themeConfig($form)
       'slideOutRight' => 'slideOutRight',
       'slideOutUp' => 'slideOutUp',
     ),
-    'bounceIn',
+    'off',
     '选择一款炫酷的列表动画',
     '介绍：开启后，列表将会显示所选择的炫酷动画'
   );
@@ -213,7 +213,7 @@ function themeConfig($form)
   $JFooter_Left = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JFooter_Left',
     NULL,
-    '2022 - 2023 © Reach - <a href="https://www.xiaoyudi.xyz" target="_blank" rel="noopener noreferrer">小宇</a>',
+    '2019 - 2020 © Reach - <a href="https://78.al" target="_blank" rel="noopener noreferrer">Joe</a>',
     '自定义底部栏左侧内容（非必填）',
     '介绍：用于修改全站底部左侧内容（wap端上方） <br>
          例如：2019 - 2020 © Reach - Joe             '
@@ -224,8 +224,8 @@ function themeConfig($form)
   $JFooter_Right = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JFooter_Right',
     NULL,
-    '<a href="https://www.xiaoyudi.xyz/" target="_blank" rel="noopener noreferrer">首页</a>
-         <a href="" target="_blank" rel="noopener noreferrer" style="margin-left: 15px">暂无功能</a>',
+    '<a href="https://78.al/feed/" target="_blank" rel="noopener noreferrer">RSS</a>
+         <a href="https://78.al/sitemap.xml" target="_blank" rel="noopener noreferrer" style="margin-left: 15px">MAP</a>',
     '自定义底部栏右侧内容（非必填）',
     '介绍：用于修改全站底部右侧内容（wap端下方） <br>
          例如：&lt;a href="/"&gt;首页&lt;/a&gt; &lt;a href="/"&gt;关于&lt;/a&gt;'
@@ -395,7 +395,7 @@ function themeConfig($form)
   $JAside_Author_Link = new Typecho_Widget_Helper_Form_Element_Text(
     'JAside_Author_Link',
     NULL,
-    "https://qm.qq.com/cgi-bin/qm/qr?k=Gj_1WVr7pHxcQ1OBY-1pBRvyqR1EukC2&noverify=0&personal_qrcode_source=3",
+    "https://78.al",
     '博主栏昵称跳转地址 - PC/WAP',
     '介绍：用于修改博主栏点击博主昵称后的跳转地址'
   );
@@ -405,7 +405,7 @@ function themeConfig($form)
   $JAside_Author_Motto = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JAside_Author_Motto',
     NULL,
-    "https://api.vvhan.com/api/ian",
+    "有钱终成眷属，没钱亲眼目睹",
     '博主栏座右铭（一言）- PC/WAP',
     '介绍：用于修改博主栏的座右铭（一言） <br />
          格式：可以填写多行也可以填写一行，填写多行时，每次随机显示其中的某一条，也可以填写API地址 <br />
@@ -429,7 +429,7 @@ function themeConfig($form)
       '9' => '开启，并显示9条最新文章',
       '10' => '开启，并显示10条最新文章'
     ),
-    '7',
+    'off',
     '博主栏下方随机文章条目 - PC',
     '介绍：用于设置博主栏下方的随机文章显示数量'
   );
@@ -442,7 +442,7 @@ function themeConfig($form)
       'off' => '关闭（默认）',
       'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启人生倒计时模块 - PC',
     '介绍：用于控制是否显示人生倒计时模块'
   );
@@ -462,7 +462,7 @@ function themeConfig($form)
       '9' => '显示9条',
       '10' => '显示10条',
     ),
-    '4',
+    'off',
     '是否开启热门文章栏 - PC',
     '介绍：用于控制是否开启热门文章栏'
   );
@@ -475,7 +475,7 @@ function themeConfig($form)
       'off' => '关闭（默认）',
       'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启最新回复栏 - PC',
     '介绍：用于控制是否开启最新回复栏 <br>
          注意：如果您关闭了全站评论，将不会显示最新回复！'
@@ -541,7 +541,7 @@ function themeConfig($form)
       'off' => '关闭（默认）',
       'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启3D云标签 - PC',
     '介绍：用于设置侧边栏是否显示3D云标签'
   );
@@ -554,7 +554,7 @@ function themeConfig($form)
       'off' => '关闭（默认）',
       'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启舔狗日记 - PC',
     '介绍：用于设置侧边栏是否显示舔狗日记'
   );
@@ -567,7 +567,7 @@ function themeConfig($form)
       'off' => '关闭（默认）',
       'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启那年今日 - PC',
     '介绍：用于设置侧边栏是否显示往年今日的文章 <br />
          其他：如果往年今日有文章则显示，没有则不显示！'
@@ -720,7 +720,7 @@ function themeConfig($form)
   $JFriends = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JFriends',
     NULL,
-    '沸腾笔记 || https://boiling.top || https://q2.qlogo.cn/g?b=qq&nk=2310452245&s=100 ||沸腾啥也知道',
+    'Joe的博客 || https://78.al || https://npm.elemecdn.com/typecho-joe-latest/assets/img/link.png || Eternity is not a distance but a decision',
     '友情链接（非必填）',
     '介绍：用于填写友情链接 <br />
          注意：您需要先增加友链链接页面（新增独立页面-右侧模板选择友链），该项才会生效 <br />
@@ -769,7 +769,7 @@ function themeConfig($form)
   $JLimitOneChinese = new Typecho_Widget_Helper_Form_Element_Select(
     'JLimitOneChinese',
     array('off' => '关闭（默认）', 'on' => '开启'),
-    'on',
+    'off',
     '是否开启评论至少包含一个中文',
     '介绍：开启后如果评论内容未包含一个中文，则将会把评论置为审核状态 <br />
          其他：用于屏蔽国外机器人刷的全英文垃圾广告信息'
