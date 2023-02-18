@@ -717,7 +717,6 @@ function themeConfig($form)
 
   $JFriends = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JFriends',
-    NULL,
     '沸腾笔记 || https://boiling.top || https://q2.qlogo.cn/g?b=qq&nk=2310452245&s=100 ||沸腾啥也知道',
     '友情链接（非必填）',
     '介绍：用于填写友情链接 <br />
