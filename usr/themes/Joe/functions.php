@@ -82,7 +82,7 @@ function themeConfig($form)
       'on' => '开启（默认）',
       'off' => '关闭'
     ),
-    'on',
+    '3',
     '开启或关闭全站评论',
     '介绍：用于一键开启关闭所有页面的评论 <br>
          注意：此处的权重优先级最高 <br>
@@ -100,7 +100,7 @@ function themeConfig($form)
       '6' => '6个',
       '7' => '7个',
     ),
-    '7',
+    '6',
     '选择导航栏最大显示的个数',
     '介绍：用于设置最大多少个后，以更多下拉框显示'
   );
@@ -224,7 +224,7 @@ function themeConfig($form)
   $JFooter_Right = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JFooter_Right',
     NULL,
-    '<a href="https://www.xiaoyudi.xyz" target="_blank" rel="noopener noreferrer">主页</a>
+    '<a href="https://www.xiaoyudi.xyz/" target="_blank" rel="noopener noreferrer">首页</a>
          <a href="" target="_blank" rel="noopener noreferrer" style="margin-left: 15px">暂无功能</a>',
     '自定义底部栏右侧内容（非必填）',
     '介绍：用于修改全站底部右侧内容（wap端下方） <br>
@@ -237,7 +237,7 @@ function themeConfig($form)
     'JDocumentTitle',
     NULL,
     NULL,
-    '切换时显示标题',
+    '网页被隐藏时显示的标题',
     '介绍：在PC端切换网页标签时，网站标题显示的内容。如果不填写，则默认不开启 <br />
          注意：严禁加单引号或双引号！！！否则会导致网站出错！！'
   );
@@ -314,8 +314,8 @@ function themeConfig($form)
   $JBirthDay = new Typecho_Widget_Helper_Form_Element_Text(
     'JBirthDay',
     NULL,
-    2022/05/09 13:00:00 <br>,
-    '运行时间',
+    NULL,
+    '网站成立日期（非必填）',
     '介绍：用于显示当前站点已经运行了多少时间。<br>
          注意：填写时务必保证填写正确！例如：2021/1/1 00:00:00 <br>
          其他：不填写则不显示，若填写错误，则不会显示计时'
@@ -351,8 +351,8 @@ function themeConfig($form)
   $JAside_Author_Nick = new Typecho_Widget_Helper_Form_Element_Text(
     'JAside_Author_Nick',
     NULL,
-    小宇,
-    ' 昵称- PC/WAP',
+    "Typecho",
+    '博主栏博主昵称 - PC/WAP',
     '介绍：用于修改博主栏的博主昵称 <br />
          注意：如果不填写时则显示 *个人设置* 里的昵称'
   );
@@ -462,7 +462,7 @@ function themeConfig($form)
       '9' => '显示9条',
       '10' => '显示10条',
     ),
-    '3',
+    '4',
     '是否开启热门文章栏 - PC',
     '介绍：用于控制是否开启热门文章栏'
   );
@@ -475,7 +475,7 @@ function themeConfig($form)
       'off' => '关闭（默认）',
       'on' => '开启'
     ),
-    'off',
+    'on',
     '是否开启最新回复栏 - PC',
     '介绍：用于控制是否开启最新回复栏 <br>
          注意：如果您关闭了全站评论，将不会显示最新回复！'
@@ -720,7 +720,7 @@ function themeConfig($form)
   $JFriends = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JFriends',
     NULL,
-    沸腾笔记 || https://boiling.top || https://q2.qlogo.cn/g?b=qq&nk=2310452245&s=100 ||沸腾啥也知道 <br />,
+    '沸腾笔记 || https://boiling.top || https://q2.qlogo.cn/g?b=qq&nk=2310452245&s=100 ||沸腾啥也知道',
     '友情链接（非必填）',
     '介绍：用于填写友情链接 <br />
          注意：您需要先增加友链链接页面（新增独立页面-右侧模板选择友链），该项才会生效 <br />
@@ -845,7 +845,7 @@ function themeConfig($form)
   $JCommentMail = new Typecho_Widget_Helper_Form_Element_Select(
     'JCommentMail',
     array('off' => '关闭（默认）', 'on' => '开启'),
-    'on',
+    'off',
     '是否开启评论邮件通知',
     '介绍：开启后评论内容将会进行邮箱通知 <br />
          注意：此项需要您完整无错的填写下方的邮箱设置！！ <br />
@@ -857,7 +857,7 @@ function themeConfig($form)
   $JCommentMailHost = new Typecho_Widget_Helper_Form_Element_Text(
     'JCommentMailHost',
     NULL,
-    smtp.qq.com,
+    NULL,
     '邮箱服务器地址',
     '例如：smtp.qq.com'
   );
@@ -877,7 +877,7 @@ function themeConfig($form)
   $JCommentMailPort = new Typecho_Widget_Helper_Form_Element_Text(
     'JCommentMailPort',
     NULL,
-    465,
+    NULL,
     '邮箱服务器端口号',
     '例如：465'
   );
@@ -897,7 +897,7 @@ function themeConfig($form)
   $JCommentMailAccount = new Typecho_Widget_Helper_Form_Element_Text(
     'JCommentMailAccount',
     NULL,
-    "2689856812@qq.com",
+    NULL,
     '发件人邮箱',
     '例如：2323333339@qq.com'
   );
@@ -907,7 +907,7 @@ function themeConfig($form)
   $JCommentMailPassword = new Typecho_Widget_Helper_Form_Element_Text(
     'JCommentMailPassword',
     NULL,
-    warvuvzyceowdgch,
+    NULL,
     '邮箱授权码',
     '介绍：这里填写的是邮箱生成的授权码 <br>
          获取方式（以QQ邮箱为例）：<br>
@@ -921,8 +921,8 @@ function themeConfig($form)
   $JBaiduToken = new Typecho_Widget_Helper_Form_Element_Text(
     'JBaiduToken',
     NULL,
-    DzPon6tCZQbldZLu,
-    '收录',
+    NULL,
+    '百度推送Token',
     '介绍：填写此处，前台文章页如果未收录，则会自动将当前链接推送给百度加快收录 <br />
          其他：Token在百度收录平台注册账号获取'
   );
