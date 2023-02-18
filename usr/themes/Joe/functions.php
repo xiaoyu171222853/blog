@@ -403,7 +403,7 @@ function themeConfig($form)
   $JAside_Author_Motto = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JAside_Author_Motto',
     NULL,
-    "有钱终成眷属，没钱亲眼目睹",
+    "https://api.vvhan.com/api/ian",
     '博主栏座右铭（一言）- PC/WAP',
     '介绍：用于修改博主栏的座右铭（一言） <br />
          格式：可以填写多行也可以填写一行，填写多行时，每次随机显示其中的某一条，也可以填写API地址 <br />
@@ -718,7 +718,7 @@ function themeConfig($form)
   $JFriends = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JFriends',
     NULL,
-    'Joe的博客 || https://78.al || https://npm.elemecdn.com/typecho-joe-latest/assets/img/link.png || Eternity is not a distance but a decision',
+    '沸腾笔记 || https://boiling.top || https://q2.qlogo.cn/g?b=qq&nk=2310452245&s=100 ||沸腾啥也知道',
     '友情链接（非必填）',
     '介绍：用于填写友情链接 <br />
          注意：您需要先增加友链链接页面（新增独立页面-右侧模板选择友链），该项才会生效 <br />
