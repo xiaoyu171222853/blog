@@ -79,10 +79,12 @@
                     </div>
                 </div>
                 <div class="joe_census__lately">
-                    <div class="title">最近评论</div>
-               <spans id="busuanzi_container_site_uv">
+                    <div class="title">最近评论
+ <spans id="busuanzi_container_site_uv">
     本站浏览量:<spans id="busuanzi_value_site_uv"></spans>
-</spans>
+</spans>  
+                    </div>
+
                     <div class="content">
                         <div id="lately"></div>
                     </div>
