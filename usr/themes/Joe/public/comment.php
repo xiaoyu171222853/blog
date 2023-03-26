@@ -30,7 +30,7 @@
             </div>
           </div>
           <div class="body">
-            <textarea class="text joe_owo__target" name="text" value="" autocomplete="new-password" placeholder="说点什么吧(为防止水评论，务必带一个汉字)，点击右上方切换成画图试试？"></textarea>
+            <textarea class="text joe_owo__target" name="text" value="" autocomplete="new-password" placeholder="说点什么吧，点击右上方切换成画图试试？"></textarea>
             <div class="draw" style="display: none;">
               <ul class="line">
                 <li data-line="3">细</li>

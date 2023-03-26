@@ -61,7 +61,6 @@
           <?php $this->need('public/operate.php'); ?>
           <?php $this->need('public/copyright.php'); ?>
           <?php $this->need('public/related.php'); ?>
-          <?php Typecho_Plugin::factory('rootvip.cn.Donate')->Donate(); ?>
         </div>
         <ul class="joe_post__pagination">
           <?php $this->theNext('<li class="joe_post__pagination-item prev">%s</li>', '', ['title' => '上一篇']); ?>

@@ -82,7 +82,7 @@ function themeConfig($form)
       'on' => '开启（默认）',
       'off' => '关闭'
     ),
-    'on',
+    '3',
     '开启或关闭全站评论',
     '介绍：用于一键开启关闭所有页面的评论 <br>
          注意：此处的权重优先级最高 <br>
@@ -223,10 +223,12 @@ function themeConfig($form)
 
   $JFooter_Right = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JFooter_Right',
-    NULl,
-    '<a href="https://www.xiaoyudi.xyz" target="_blank" rel="noopener noreferrer">首页</a>
+    NULL,
+    '<a href="https://78.al/feed/" target="_blank" rel="noopener noreferrer">RSS</a>
          <a href="https://78.al/sitemap.xml" target="_blank" rel="noopener noreferrer" style="margin-left: 15px">MAP</a>',
     '自定义底部栏右侧内容（非必填）',
+    '介绍：用于修改全站底部右侧内容（wap端下方） <br>
+         例如：&lt;a href="/"&gt;首页&lt;/a&gt; &lt;a href="/"&gt;关于&lt;/a&gt;'
   );
   $JFooter_Right->setAttribute('class', 'joe_content joe_global');
   $form->addInput($JFooter_Right);
@@ -403,7 +405,7 @@ function themeConfig($form)
   $JAside_Author_Motto = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JAside_Author_Motto',
     NULL,
-    "https://api.vvhan.com/api/ian",
+    "有钱终成眷属，没钱亲眼目睹",
     '博主栏座右铭（一言）- PC/WAP',
     '介绍：用于修改博主栏的座右铭（一言） <br />
          格式：可以填写多行也可以填写一行，填写多行时，每次随机显示其中的某一条，也可以填写API地址 <br />
@@ -717,9 +719,10 @@ function themeConfig($form)
 
   $JFriends = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JFriends',
-    '沸腾笔记 || https://boiling.top || https://q2.qlogo.cn/g?b=qq&nk=2310452245&s=100 ||沸腾啥也知道',
+    NULL,
+    'Joe的博客 || https://78.al || https://npm.elemecdn.com/typecho-joe-latest/assets/img/link.png || Eternity is not a distance but a decision',
     '友情链接（非必填）',
-'
+    '介绍：用于填写友情链接 <br />
          注意：您需要先增加友链链接页面（新增独立页面-右侧模板选择友链），该项才会生效 <br />
          格式：博客名称 || 博客地址 || 博客头像 || 博客简介 <br />
          其他：一行一个，一行代表一个友链'
@@ -766,7 +769,7 @@ function themeConfig($form)
   $JLimitOneChinese = new Typecho_Widget_Helper_Form_Element_Select(
     'JLimitOneChinese',
     array('off' => '关闭（默认）', 'on' => '开启'),
-    'on',
+    'off',
     '是否开启评论至少包含一个中文',
     '介绍：开启后如果评论内容未包含一个中文，则将会把评论置为审核状态 <br />
          其他：用于屏蔽国外机器人刷的全英文垃圾广告信息'
