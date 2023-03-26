@@ -183,11 +183,11 @@ function _getAvatarByMail($mail)
 };
 
 /* 获取侧边栏随机一言 */
-function _getAsideAuthorMotto()
+/*function _getAsideAuthorMotto()
 {
-  /*$JMottoRandom = explode("\r\n", Helper::options()->JAside_Author_Motto);*/
+  $JMottoRandom = explode("\r\n", Helper::options()->JAside_Author_Motto);
   echo $JMottoRandom[array_rand($JMottoRandom, 1)];
-}
+}*/
 
 /* 获取文章摘要 */
 function _getAbstract($item, $type = true)
